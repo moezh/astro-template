@@ -15,7 +15,7 @@ Starter template for **Astro** projects with **Cloudflare Pages SSR**, **Tailwin
 
 ## Quick Workflow For Deployments
 
-1. Log in to Cloudflare: `npm run cf:login`
+1. Log in to Cloudflare (if not already logged in): `npm run cf:login`
 
 2. Create the project (first time only): `npm run cf:create`
 
