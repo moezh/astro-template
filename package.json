@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "astro dev",
+    "build": "rm -rf build && astro check --minimumSeverity warning && astro build",
+    "preview": "npm run build && wrangler pages dev",
+    "cf:login": "wrangler login",
+    "cf:create": "wrangler pages project create astro --production-branch=main",
+    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@astrojs/cloudflare": "^12.6.12",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.14",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.60.0"
+  }
+}
