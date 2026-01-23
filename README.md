@@ -7,6 +7,10 @@ Starter template for **Astro** projects with **Cloudflare Pages SSR**, **Tailwin
 - **Node.js** and **npm** must be installed.
 - **Wrangler CLI** must be installed for Cloudflare deployment.
 
+## Cloudflare Project Configuration
+
+Before deploying, you must define the Cloudflare Pages project name used by Wrangler. Edit `package.json` and update the `cfProject` value under the `config` section.
+
 ## Getting Started
 
 1. Install dependencies: `npm install`
