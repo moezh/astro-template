@@ -1,6 +1,6 @@
-# Astro + Cloudflare Pages SSR Quickstart
+# Astro + Cloudflare Pages SSR Quickstart Template
 
-Starter template for **Astro** projects with **Cloudflare Pages SSR**, **TailwindCSS**, and **TypeScript**.
+A quickstart template for web applications built with **Astro** and **Cloudflare Pages SSR**, leveraging **TypeScript** for type safety and **Tailwind CSS** for utility-first styling.
 
 ## Prerequisites
 
