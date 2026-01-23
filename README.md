@@ -7,15 +7,15 @@ A quickstart template for web applications built with **Astro** and **Cloudflare
 - **Node.js** and **npm** must be installed.
 - **Wrangler CLI** must be installed for Cloudflare deployment.
 
-## Cloudflare Project Configuration
-
-Before deploying, you must define the Cloudflare Pages project name used by Wrangler. Edit `package.json` and update the `cfProject` value under the `config` section.
-
 ## Getting Started
 
 1. Install dependencies: `npm install`
 
 2. Start the local Astro **development** server with hot reload: `npm run dev`
+
+## Cloudflare Project Configuration
+
+Before deploying, you must define the Cloudflare Pages project name used by Wrangler. Edit `package.json` and update the `cfProject` value under the `config` section.
 
 ## Quick Workflow For Deployments
 
