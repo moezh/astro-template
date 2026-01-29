@@ -5,7 +5,6 @@ A quickstart template for web applications built with **Astro** and **Cloudflare
 ## Prerequisites
 
 - **Node.js** and **npm** must be installed.
-- **Wrangler CLI** must be installed for Cloudflare deployment.
 
 ## Getting Started
 
