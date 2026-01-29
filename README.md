@@ -1,6 +1,6 @@
 # Astro + Cloudflare Pages SSR Quickstart Template
 
-A quickstart template for web applications built with **Astro** and **Cloudflare Pages SSR**, leveraging **TypeScript** for type safety and **Tailwind CSS** for utility-first styling.
+A quickstart template for web applications built with **Astro** and **Cloudflare Pages SSR**, leveraging **TypeScript** for type safety, **Tailwind CSS** for utility-first styling and **Wrangler CLI** for deployment.
 
 ## Prerequisites
 
@@ -15,16 +15,12 @@ A quickstart template for web applications built with **Astro** and **Cloudflare
 
 ## Cloudflare Project Configuration
 
-Before deploying, you must define the Cloudflare Pages project name used by Wrangler. Edit `package.json` and update the `cfProject` value under the `config` section.
+Before deploying, you must define the Cloudflare project name used by Wrangler. Edit `wrangler.toml` to update the `name` field.
 
 ## Quick Workflow For Deployments
 
-1. Log in to Cloudflare (if not already logged in): `npm run cf:login`
+1. Log in to Cloudflare (if not already logged in): `npm run login`
 
-2. Create the project (first time only): `npm run cf:create`
+2. Preview the project locally: `npm run preview`
 
-3. Build the project locally: `npm run build`
-
-4. Preview the project with SSR locally: `npm run preview`
-
-5. Deploy to Cloudflare Pages: `npm run deploy`
+3. Deploy to Cloudflare: `npm run deploy`

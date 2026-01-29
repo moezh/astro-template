@@ -1,14 +1,10 @@
 {
-  "config": {
-    "cfProject": "astrojs"
-  },
   "scripts": {
     "dev": "astro dev",
-    "cf:login": "wrangler login",
-    "cf:create": "wrangler pages project create $npm_package_config_cfProject --production-branch=main",
+    "login": "wrangler login",
     "build": "rm -rf build && astro check --minimumSeverity warning && astro build",
-    "preview": "wrangler pages dev ./dist",
-    "deploy": "wrangler pages deploy ./dist --project-name $npm_package_config_cfProject --commit-dirty=true"
+    "preview": "npm run build && wrangler pages dev",
+    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -17,6 +13,6 @@
     "astro": "^5.16.14",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "wrangler": "^4.60.0"
+    "wrangler": "^4.61.1"
   }
 }
