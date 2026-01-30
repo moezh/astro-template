@@ -6,15 +6,40 @@ A quickstart template for web applications built with **Astro** and **Cloudflare
 
 - **Node.js** and **npm** must be installed.
 
+## Cloudflare Project Configuration
+
+Before deploying, you must define the Cloudflare project name used by Wrangler. Edit `wrangler.toml` to update the `name` field.
+
+## Database (Cloudflare D1)
+
+This project supports an optional Cloudflare **D1** database.
+
+When D1 is used, the database binding **must** be declared in `wrangler.toml` before running locally or deploying.
+
+### Configuration
+
+```toml
+[[d1_databases]]
+binding = "db"
+database_name = "db"
+database_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX"
+```
+
+### Database scripts
+
+The following npm scripts are provided for databases management:
+
+- `npm run db:list` — list existing D1 databases
+- `npm run db:create` — create a database
+- `npm run db:delete` — delete a database
+
 ## Getting Started
 
 1. Install dependencies: `npm install`
 
-2. Start the local Astro **development** server with hot reload: `npm run dev`
+1. Log in to Cloudflare (if not already logged in): `npm run login`
 
-## Cloudflare Project Configuration
-
-Before deploying, you must define the Cloudflare project name used by Wrangler. Edit `wrangler.toml` to update the `name` field.
+1. Start the local **development** server (hot reload enabled): `npm run dev`
 
 ## Quick Workflow For Deployments
 

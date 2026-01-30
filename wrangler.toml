@@ -1,3 +1,8 @@
 name = "astro-template"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-01-01"
+
+[[d1_databases]]
+binding = "db"
+database_name = "db"
+database_id = "882974b0-03d6-40c6-9536-177009df87a3"

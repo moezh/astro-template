@@ -4,7 +4,10 @@
     "login": "wrangler login",
     "build": "rm -rf build && astro check --minimumSeverity warning && astro build",
     "preview": "npm run build && wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true"
+    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true",
+    "db:list": "wrangler d1 list",
+    "db:create": "wrangler d1 create",
+    "db:delete": "wrangler d1 delete"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
