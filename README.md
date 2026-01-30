@@ -21,8 +21,8 @@ When D1 is used, the database binding **must** be declared in `wrangler.toml` be
 ```toml
 [[d1_databases]]
 binding = "db"
-database_name = "db"
-database_id = "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX"
+database_name = ""
+database_id = ""
 ```
 
 ### Database scripts
