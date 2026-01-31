@@ -4,6 +4,6 @@ compatibility_flags = [ "nodejs_compat" ]
 
 [[d1_databases]]
 binding = "db"
-database_name = "cron-template"
-database_id = "7b2855ec-4106-425f-851c-4a730832a365"
+database_name = "xxxxxx"
+database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 remote = true
