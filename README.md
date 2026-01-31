@@ -10,6 +10,14 @@ A quickstart template for web applications built with **Astro** and **Cloudflare
 
 Before deployment, the project name used by Wrangler must be defined in the `config.name` field of `package.json`.
 
+## Getting Started
+
+1. Install dependencies: `npm install`
+
+1. Log in to Cloudflare (if not already logged in): `npm run login`
+
+1. Start the local **development** server (hot reload enabled): `npm run dev`
+
 ## Database (Cloudflare D1)
 
 This project supports an optional Cloudflare **D1** database.
@@ -25,14 +33,6 @@ database_name = ""
 database_id = ""
 remote = true
 ```
-
-## Getting Started
-
-1. Install dependencies: `npm install`
-
-1. Log in to Cloudflare (if not already logged in): `npm run login`
-
-1. Start the local **development** server (hot reload enabled): `npm run dev`
 
 ### Database scripts
 
