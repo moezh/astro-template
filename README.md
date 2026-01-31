@@ -26,14 +26,6 @@ database_id = ""
 remote = true
 ```
 
-### Database scripts
-
-The following npm scripts are provided for the D1 database management:
-
-- `npm run db:info` — show D1 database info
-- `npm run db:create` — create D1 database
-- `npm run db:init` — initialize D1 schema
-
 ## Getting Started
 
 1. Install dependencies: `npm install`
@@ -41,6 +33,14 @@ The following npm scripts are provided for the D1 database management:
 1. Log in to Cloudflare (if not already logged in): `npm run login`
 
 1. Start the local **development** server (hot reload enabled): `npm run dev`
+
+### Database scripts
+
+The following npm scripts are provided for the D1 database management:
+
+- `npm run db:info` — show D1 database info
+- `npm run db:create` — create D1 database
+- `npm run db:init` — initialize D1 schema
 
 ## Quick Workflow For Deployments
 
