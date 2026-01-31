@@ -1,18 +1,23 @@
 {
+  "config": {
+    "name": "astro-template"
+  },
   "scripts": {
     "dev": "astro dev",
     "login": "wrangler login",
     "build": "rm -rf build && astro check --minimumSeverity warning && astro build",
     "preview": "npm run build && wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true",
-    "db:list": "wrangler d1 list",
-    "db:create": "wrangler d1 create",
-    "db:delete": "wrangler d1 delete"
+    "deploy": "npm run build && wrangler pages deploy --commit-dirty=true --name $npm_package_config_name",
+    "db:info": "wrangler d1 info $npm_package_config_name",
+    "db:create": "wrangler d1 create --use-remote --binding db $npm_package_config_name",
+    "db:init": "wrangler d1 execute -y --remote --file=src/schema.sql $npm_package_config_name"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
     "@astrojs/cloudflare": "^12.6.12",
+    "@cloudflare/workers-types": "^4.20260129.0",
     "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^25.1.0",
     "astro": "^5.16.14",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",

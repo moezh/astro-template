@@ -1,8 +1,9 @@
-name = "astro-template"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-01-01"
+compatibility_flags = [ "nodejs_compat" ]
 
 [[d1_databases]]
 binding = "db"
-database_name = "db"
-database_id = "882974b0-03d6-40c6-9536-177009df87a3"
+database_name = "cron-template"
+database_id = "7b2855ec-4106-425f-851c-4a730832a365"
+remote = true

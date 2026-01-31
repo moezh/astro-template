@@ -1,6 +1,12 @@
 /// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
 
-export interface Env {
-  DB: D1Database;
+interface Env {
+  db: D1Database;
+}
+
+type Runtime = import("@astrojs/cloudflare").Runtime<Env>;
+
+declare namespace App {
+  interface Locals extends Runtime {}
 }
